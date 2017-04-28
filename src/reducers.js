@@ -4,11 +4,16 @@ import {
 } from './actions'
 
 export const counter = (state = 0, action) => {
-  if (action.type === INCREMENT_COUNTER) {
-      return state + 1
-  } else if (action.type === DECREMENT_COUNTER) {
-      return state - 1
-  } else {
-      return state
+  switch (action.type) {
+    case INCREMENT_COUNTER:
+      return Object.assign({}, state, {
+        count: state.count + 1
+      });
+    case DECREMENT_COUNTER:
+      return Object.assign({}, state, {
+        count: state.count - 1
+      });
+    default:
+      return state;
   }
 };

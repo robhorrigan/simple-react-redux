@@ -21,12 +21,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Simple React-Redux</h2>
         </div>
-        <p className="App-intro">
-           <code>src/App.js</code>
-        </p>
-        <h1>Simple Redux</h1>
+        <h1>Simple Counter</h1>
         <button onClick={this.increment}>Increment</button>
-        {this.props.counter}
+        { this.props.count }
         <button onClick={this.decrement}>Decrement</button>
       </div>
     );
@@ -35,7 +32,7 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    counter: state.counter
+    count: state.counter.count
   }
 }
 
