@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import logo from './react-redux-logos.jpg';
+import logo from '../react-redux-logos.jpg';
 import './App.css';
 
-import { incrementCounter, decrementCounter } from './actions'
+import { incrementCounter, decrementCounter } from '../actions'
 
 class App extends Component {
   increment = () => {
@@ -21,10 +21,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to Simple React-Redux</h2>
         </div>
-        <h1>Simple Counter</h1>
-        <button onClick={this.increment}>Increment</button>
+        <h1>Counter</h1>
+        <button onClick={this.increment}>Increment</button>{' '}
         { this.props.count }
-        <button onClick={this.decrement}>Decrement</button>
+        {' '}<button onClick={this.decrement}>Decrement</button>
       </div>
     );
   }

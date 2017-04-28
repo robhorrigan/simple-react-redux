@@ -3,6 +3,7 @@ import * as reducers from './reducers'
 
 const reducer = combineReducers(reducers);
 
+// This just gives us access to the Redux DevTools
 const composeEnhancers =
     typeof window === 'object' &&
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
