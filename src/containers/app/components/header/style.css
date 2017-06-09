@@ -1,0 +1,10 @@
+.logo {
+  height: 120px;
+}
+
+.header {
+  background-color: #222;
+  height: 180px;
+  padding: 40px;
+  color: white;
+}
