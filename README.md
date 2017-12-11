@@ -1,4 +1,4 @@
-###Simple React Redux
+### Simple React Redux
 
 A simple react/redux app to help you get started using react/redux with minimal setup.
 
